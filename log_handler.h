@@ -114,6 +114,6 @@ log_doit(int errnoflag, int error, int priority, const char *fmt, va_list ap)
         fputs(buf, stderr);
         fflush(stderr);
     }else {
-        syslog(priority, "%s", buf);
+    syslog(priority, "%s", buf);
     }
 }
